@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">fimo</string>
+    <string name="app_name">FiMo</string>
+    <string name="title">Atur Keuangan</string>
+    <string name="desc">Atur keuanganmu dengan mudah di aplikasi Fimo</string>
+    <string name="next">Selanjutnya</string>
+    <string name="gambar_ilustrasi">Ini Gambar Ilustrasi</string>
 </resources>
