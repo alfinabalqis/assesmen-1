@@ -4,4 +4,10 @@
     <string name="desc">Atur keuanganmu dengan mudah di aplikasi Fimo</string>
     <string name="next">Selanjutnya</string>
     <string name="gambar_ilustrasi">Ini Gambar Ilustrasi</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="welcome_desc">Ayo manajemen keuanganmu mulai hari ini</string>
+    <string name="username_confirm">Masukan Username</string>
+    <string name="saldo">Masukkan Saldo</string>
+    <string name="invalid">Data Harus Diisi</string>
+    <string name="sukses">Berhasil Login</string>
 </resources>

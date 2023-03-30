@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.d3if3133.fimo.databinding.ActivityOnboardingBinding
-import org.d3if3133.fimo.databinding.ActivitySplashscreenBinding
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
@@ -16,7 +15,7 @@ class OnboardingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
