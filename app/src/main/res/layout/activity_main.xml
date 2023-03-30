@@ -1,18 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/desc_catat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/catat"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/txtUsername"
+            app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textKategori"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/kategori"
+            android:text="@string/kategori"
+            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
+            app:layout_constraintStart_toStartOf="@+id/desc_catat"
+            app:layout_constraintTop_toBottomOf="@id/desc_catat">
+
+            <AutoCompleteTextView
+                android:id="@+id/kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:inputType="none"
+                android:text="@string/kategori" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/editTanggal"
+            android:text="@string/tanggal"
+            app:layout_constraintEnd_toEndOf="@+id/textKategori"
+            app:layout_constraintStart_toStartOf="@+id/textKategori"
+            app:layout_constraintTop_toBottomOf="@id/textKategori">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:focusable="false"
+                android:hint="@string/tanggal"
+                android:inputType="none"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputTanggal"
+            app:layout_constraintStart_toStartOf="@+id/textInputTanggal"
+            app:layout_constraintTop_toBottomOf="@id/textInputTanggal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="@string/pengeluaran"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/editDeskripsi"
+            android:text="@string/username_confirm"
+            app:layout_constraintEnd_toEndOf="@+id/textInputPengeluaran"
+            app:layout_constraintStart_toStartOf="@+id/textInputPengeluaran"
+            app:layout_constraintTop_toBottomOf="@id/textInputPengeluaran">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="@string/desc_pengeluaran"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:text="@string/hitung"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
+            app:layout_constraintStart_toStartOf="@id/desc_catat"
+            app:layout_constraintTop_toBottomOf="@+id/textInputDeskripsi" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/danger"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
+            app:layout_constraintStart_toStartOf="@id/desc_catat"
+            app:layout_constraintTop_toBottomOf="@+id/btnHitung" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnReset" />
+
+        <TextView
+            android:id="@+id/txtSaldoAwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Saldo Awal Anda : Rp 0" />
+
+        <TextView
+            android:id="@+id/txtSisaSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSaldoAwal"
+            tools:text="Sisa Saldo Anda : Rp 0" />
+
+        <TextView
+            android:id="@+id/tipePengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="32dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSisaSaldo"
+            tools:text="@string/tipe_pengeluaran" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

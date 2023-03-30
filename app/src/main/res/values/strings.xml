@@ -10,4 +10,19 @@
     <string name="saldo">Masukkan Saldo</string>
     <string name="invalid">Data Harus Diisi</string>
     <string name="sukses">Berhasil Login</string>
+    <string name="catat">Jangan lupa catat pengeluaranmu hari ini yaa</string>
+    <string name="username">Hi %1$s</string>
+    <string name="hitung">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="hapus_data">Data Berhasil Dihapus</string>
+    <string name="no_data">Anda Belum Memasukkan Data!</string>
+    <string name="important_data">Anda harus mengisi pengeluaran</string>
+    <string name="kategori">Kategori</string>
+    <string name="pengeluaran">Jumlah Pengeluaran</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="saldo_awal">Saldo Anda Rp %1$s</string>
+    <string name="surplus">Selamat, kamu berhasil menghemat</string>
+    <string name="defisit">Wahh hari ini boros yaa. Saldonya udah minus nih</string>
+    <string name="tipe_pengeluaran">Hasilnya</string>
+    <string name="desc_pengeluaran">Deskripsi</string>
 </resources>
