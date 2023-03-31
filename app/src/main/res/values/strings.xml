@@ -28,4 +28,8 @@
     <string name="tipe_pengeluaran">Hasilnya</string>
     <string name="desc_pengeluaran">Deskripsi</string>
     <string name="no_desc">Tidak ada deskripsi</string>
+    <string name="dana_darurat">Dana Darurat</string>
+    <string name="pengeluaran_bulanan">Pengeluaran Bulanan</string>
+    <string name="status">Status</string>
+    <string name="final_dana_darurat">Dana darurat yang dibutuhkan adalah :</string>
 </resources>
