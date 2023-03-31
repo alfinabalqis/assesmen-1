@@ -21,7 +21,7 @@
     <string name="pengeluaran">Jumlah Pengeluaran</string>
     <string name="tanggal">Tanggal</string>
     <string name="saldo_awal">Saldo Anda : %1$s</string>
-    <string name="sisa_saldo">Sisa Saldo Anda : %1$.0f</string>
+    <string name="sisa_saldo">Sisa Saldo Anda : %1$s</string>
     <string name="surplus">Selamat, kamu berhasil menghemat</string>
     <string name="defisit">Wahh hari ini boros yaa. Saldonya udah minus nih</string>
     <string name="balance">Wah ngepas banget ya</string>

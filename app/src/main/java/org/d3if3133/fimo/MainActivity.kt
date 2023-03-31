@@ -80,24 +80,14 @@ class MainActivity : AppCompatActivity() {
         if(binding.editPengeluaran.text.toString().isEmpty()) {
             Toast.makeText(this, R.string.important_data, Toast.LENGTH_LONG).show()
         } else {
-//            val saldo = intent.getStringExtra("getSaldo").toString().toFloat()
-//            val pengeluaran = binding.editPengeluaran.text.toString().toFloat()
-//
-//            val sisaSaldo = saldo - pengeluaran
-//            val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
-//            formatter.maximumFractionDigits = 0
-//            val sisa = (formatter.format(sisaSaldo)).toString().toFloat()
-//            binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
-
             val saldo = intent.getStringExtra("getSaldo").toString().toFloat()
-//            val pengeluaranText = binding.editPengeluaran.text.toString().replace("Rp", "").replace(".", "")
-            val pengeluaranText = binding.editPengeluaran.text.toString().replace("Rp", "").replace(".", "")
-            val pengeluaran = if (pengeluaranText.isNotBlank()) pengeluaranText.replace(Regex("[^0-9]"), "").toFloat() else 0f
+            val pengeluaran = binding.editPengeluaran.text.toString().toFloat()
 
             val sisaSaldo = saldo - pengeluaran
+
             val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
             formatter.maximumFractionDigits = 0
-            val sisa = formatter.format(sisaSaldo).toFloat()
+            val sisa = formatter.format(sisaSaldo)
             binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
 
             if (pengeluaran < saldo) {
