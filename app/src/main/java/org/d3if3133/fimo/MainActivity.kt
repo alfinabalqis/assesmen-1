@@ -49,13 +49,20 @@ class MainActivity : AppCompatActivity() {
                 selectedDate.set(Calendar.MONTH, month)
                 selectedDate.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
-                val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-                binding.editTanggal.setText(dateFormat.format(selectedDate.time))
+                val currentDate = Calendar.getInstance()
+                if (selectedDate.after(currentDate)) {
+                    Toast.makeText(this, "Tidak bisa memilih tanggal di masa depan", Toast.LENGTH_SHORT).show()
+                } else {
+                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    binding.editTanggal.setText(dateFormat.format(selectedDate.time))
+                }
             },
             Calendar.getInstance().get(Calendar.YEAR),
             Calendar.getInstance().get(Calendar.MONTH),
             Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
         )
+        // batasi pengguna untuk memilih tanggal sebelum atau pada hari ini
+        datePicker.datePicker.maxDate = System.currentTimeMillis()
         datePicker.show()
     }
 
