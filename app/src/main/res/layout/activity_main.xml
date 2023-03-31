@@ -130,33 +130,29 @@
 
         <Button
             android:id="@+id/btnHitung"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:backgroundTint="@color/primary_color"
             android:text="@string/hitung"
             android:textColor="@color/white"
             app:cornerRadius="5dp"
-            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
-            app:layout_constraintStart_toStartOf="@id/desc_catat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputDeskripsi" />
 
         <Button
             android:id="@+id/btnReset"
-            android:layout_width="match_parent"
+            android:layout_width="88dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:backgroundTint="@color/danger"
             android:text="@string/reset"
             android:textColor="@color/white"
             app:cornerRadius="5dp"
-            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
-            app:layout_constraintStart_toStartOf="@id/desc_catat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnHitung" />
 
         <View
@@ -173,7 +169,9 @@
             android:id="@+id/txtSaldoAwal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -186,8 +184,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtSaldoAwal"
+            app:layout_constraintStart_toStartOf="@+id/txtSaldoAwal"
             app:layout_constraintTop_toBottomOf="@+id/txtSaldoAwal"
             tools:text="@string/sisa_saldo" />
 
@@ -195,13 +193,16 @@
             android:id="@+id/tipePengeluaran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
             android:paddingBottom="32dp"
+            android:textAlignment="center"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/txtSisaSaldo"
-            app:layout_constraintStart_toStartOf="@+id/txtSisaSaldo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtSisaSaldo"
-            tools:text="@string/tipe_pengeluaran" />
+            tools:text="@string/defisit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

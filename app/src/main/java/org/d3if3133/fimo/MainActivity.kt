@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import org.d3if3133.fimo.databinding.ActivityMainBinding
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val getUsername:String = intent.getStringExtra("getUsername").toString()
         binding.txtUsername.text = getString(R.string.username, getUsername)
 
-        val getSaldo:String = intent.getStringExtra("getSaldo").toString()
+        val getSaldo:String = intent.getStringExtra("getHasilFormat").toString()
         binding.txtSaldoAwal.text = getString(R.string.saldo_awal, getSaldo)
 
         val datepickerEditText = findViewById<TextInputEditText>(R.id.editTanggal)
@@ -72,12 +73,25 @@ class MainActivity : AppCompatActivity() {
         if(binding.editPengeluaran.text.toString().isEmpty()) {
             Toast.makeText(this, R.string.important_data, Toast.LENGTH_LONG).show()
         } else {
+//            val saldo = intent.getStringExtra("getSaldo").toString().toFloat()
+//            val pengeluaran = binding.editPengeluaran.text.toString().toFloat()
+//
+//            val sisaSaldo = saldo - pengeluaran
+//            val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
+//            formatter.maximumFractionDigits = 0
+//            val sisa = (formatter.format(sisaSaldo)).toString().toFloat()
+//            binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
+
             val saldo = intent.getStringExtra("getSaldo").toString().toFloat()
-            val pengeluaran = binding.editPengeluaran.text.toString().toFloat()
+//            val pengeluaranText = binding.editPengeluaran.text.toString().replace("Rp", "").replace(".", "")
+            val pengeluaranText = binding.editPengeluaran.text.toString().replace("Rp", "").replace(".", "")
+            val pengeluaran = if (pengeluaranText.isNotBlank()) pengeluaranText.replace(Regex("[^0-9]"), "").toFloat() else 0f
 
             val sisaSaldo = saldo - pengeluaran
-
-            binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisaSaldo)
+            val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
+            formatter.maximumFractionDigits = 0
+            val sisa = formatter.format(sisaSaldo).toFloat()
+            binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
 
             if (pengeluaran < saldo) {
                 binding.tipePengeluaran.text = getString(R.string.surplus)
@@ -86,7 +100,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 binding.tipePengeluaran.text = getString(R.string.defisit)
             }
-
         }
     }
 
