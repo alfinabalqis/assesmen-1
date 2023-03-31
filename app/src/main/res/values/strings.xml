@@ -31,5 +31,9 @@
     <string name="dana_darurat">Dana Darurat</string>
     <string name="pengeluaran_bulanan">Pengeluaran Bulanan</string>
     <string name="status">Status</string>
-    <string name="final_dana_darurat">Dana darurat yang dibutuhkan adalah :</string>
+    <string name="final_dana_darurat">Dana darurat yang dibutuhkan adalah : \n(belum menikah)</string>
+    <string name="add_dana">Tambah Dana Darurat</string>
+    <string name="result">%1$s</string>
+    <string name="back">Kembali</string>
+    <string name="keluar">Keluar</string>
 </resources>

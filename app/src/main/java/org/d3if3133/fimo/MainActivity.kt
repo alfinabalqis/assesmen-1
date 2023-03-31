@@ -1,6 +1,7 @@
 package org.d3if3133.fimo
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -37,7 +38,11 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayKategori)
         binding.kategori.setAdapter(adapter)
 
-
+        binding.fabDanaDarurat.setOnClickListener {
+            val intent = Intent(this, DanaDaruratActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun showDatePicker() {
@@ -110,7 +115,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.no_data, Toast.LENGTH_SHORT).show()
         } else {
             binding.editPengeluaran.text = null
-            binding.kategori.setText(R.string.kategori)
             binding.editDeskripsi.text = null
             binding.txtSisaSaldo.text = null
             binding.tipePengeluaran.text = null

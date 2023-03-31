@@ -30,7 +30,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/catat"
-            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/txtUsername"
             app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
@@ -196,7 +195,6 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:paddingBottom="32dp"
             android:textAlignment="center"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -204,6 +202,17 @@
             app:layout_constraintTop_toBottomOf="@+id/txtSisaSaldo"
             tools:text="@string/defisit" />
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDanaDarurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/add_dana"
+            android:src="@drawable/icon_wallet"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputDeskripsi" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

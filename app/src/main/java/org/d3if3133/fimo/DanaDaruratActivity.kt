@@ -1,11 +1,7 @@
 package org.d3if3133.fimo
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import org.d3if3133.fimo.databinding.ActivityDanaDaruratBinding
 import java.text.NumberFormat
 import java.util.*
@@ -21,20 +17,12 @@ class DanaDaruratActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnHitung.setOnClickListener{ hitungButton() }
+        binding.btnReset.setOnClickListener{ resetButton() }
+    }
 
-        val arrayKategori = arrayOf("Menikah", "Belum Menikah")
-        val adapter = ArrayAdapter(this, R.layout.kategori_item, arrayKategori)
-        binding.kategori.setAdapter(adapter)
-        binding.kategori.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                if (position == 1) { // "Menikah" selected
-                    multiplier = 6
-                } else {
-                    multiplier = 3 // reset to default
-                }
-            }
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
-        }
+    private fun resetButton() {
+        binding.editPengeluaran.text = null
+        binding.totalDana.text = ""
     }
 
     private fun hitungButton() {
