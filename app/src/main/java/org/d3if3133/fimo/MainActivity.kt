@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.android.material.textfield.TextInputEditText
 import org.d3if3133.fimo.databinding.ActivityMainBinding
 import java.text.NumberFormat
@@ -43,6 +44,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    override fun onBackPressed() {showExitConfirmationDialog()}
+    private fun showExitConfirmationDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Exit Application")
+            .setMessage("Are you sure you want to exit?")
+            .setPositiveButton("Yes") { _, _ ->
+                // Exit the application
+                finishAffinity()
+            }
+            .setNegativeButton("No", null)
+            .show()
     }
 
     private fun showDatePicker() {
