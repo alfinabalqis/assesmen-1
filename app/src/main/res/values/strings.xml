@@ -36,4 +36,9 @@
     <string name="result">%1$s</string>
     <string name="back">Kembali</string>
     <string name="keluar">Keluar</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="histori">Histori</string>
+    <string name="copyright">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow, dana darurat serta dapat membagikannya ke catatan user. \n Copyright © 2023 Alfina Balqis Nurzaharani.</string>
+    <string name="contoh">15 April 2022</string>
 </resources>
