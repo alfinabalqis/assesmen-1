@@ -1,11 +1,9 @@
 package org.d3if3133.fimo
 
 import android.app.DatePickerDialog
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.textfield.TextInputEditText
@@ -29,21 +27,11 @@ class MainActivity : AppCompatActivity() {
         val getUsername:String = intent.getStringExtra("getUsername").toString()
         binding.txtUsername.text = getString(R.string.username, getUsername)
 
-        val getSaldo:String = intent.getStringExtra("getHasilFormat").toString()
-        binding.txtSaldoAwal.text = getString(R.string.saldo_awal, getSaldo)
+//        val getSaldo:String = intent.getStringExtra("getHasilFormat").toString()
+//        binding.txtSaldoAwal.text = getString(R.string.saldo_awal, getSaldo)
 
         val datepickerEditText = findViewById<TextInputEditText>(R.id.editTanggal)
         datepickerEditText.setOnClickListener { showDatePicker() }
-
-        val arrayKategori = arrayOf("Makanan", "Minuman", "Pakaian", "Pendidikan")
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayKategori)
-        binding.kategori.setAdapter(adapter)
-
-//        binding.fabDanaDarurat.setOnClickListener {
-//            val intent = Intent(this, DanaDaruratActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
     }
 
     override fun onBackPressed() {showExitConfirmationDialog()}
@@ -86,12 +74,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun hitungButton() {
-        val tanggal = binding.editTanggal.text.toString()
-        val kategori = binding.kategori.text.toString()
-
-        if(TextUtils.isEmpty(tanggal) || TextUtils.isEmpty(kategori)){
-            Toast.makeText(this, R.string.no_data, Toast.LENGTH_LONG).show()
-        }
 
         if (binding.editDeskripsi.text.toString().isEmpty()){
             binding.editDeskripsi.setText(R.string.no_desc)
@@ -102,12 +84,12 @@ class MainActivity : AppCompatActivity() {
             val saldo = intent.getStringExtra("getSaldo").toString().toFloat()
             val pengeluaran = binding.editPengeluaran.text.toString().toFloat()
 
-            val sisaSaldo = saldo - pengeluaran
+            // val sisaSaldo = saldo - pengeluaran
 
             val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
             formatter.maximumFractionDigits = 0
-            val sisa = formatter.format(sisaSaldo)
-            binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
+            // val sisa = formatter.format(sisaSaldo)
+            // binding.txtSisaSaldo.text = getString(R.string.sisa_saldo, sisa)
 
             if (pengeluaran < saldo) {
                 binding.tipePengeluaran.text = getString(R.string.surplus)
@@ -123,14 +105,14 @@ class MainActivity : AppCompatActivity() {
         // val username = binding.editUsername.text.toString()
         val pengeluaran = binding.editPengeluaran.text.toString()
         val tanggal = binding.editTanggal.text.toString()
-        val kategori = binding.kategori.text.toString()
+        // val kategori = binding.kategori.text.toString()
 
-        if(TextUtils.isEmpty(pengeluaran) || TextUtils.isEmpty(tanggal) || TextUtils.isEmpty(kategori)){
+        if(TextUtils.isEmpty(pengeluaran) || TextUtils.isEmpty(tanggal)){
             Toast.makeText(this, R.string.no_data, Toast.LENGTH_SHORT).show()
         } else {
             binding.editPengeluaran.text = null
             binding.editDeskripsi.text = null
-            binding.txtSisaSaldo.text = null
+            // binding.txtSisaSaldo.text = null
             binding.tipePengeluaran.text = null
             binding.editTanggal.text = null
 

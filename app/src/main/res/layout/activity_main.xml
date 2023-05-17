@@ -34,31 +34,6 @@
             app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textKategori"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:labelFor="@+id/kategori"
-            android:text="@string/kategori"
-            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
-            app:layout_constraintStart_toStartOf="@+id/desc_catat"
-            app:layout_constraintTop_toBottomOf="@id/desc_catat">
-
-            <AutoCompleteTextView
-                android:id="@+id/kategori"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_weight="1"
-                android:backgroundTint="@android:color/transparent"
-                android:inputType="none"
-                android:text="@string/kategori" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputTanggal"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -68,9 +43,9 @@
             android:layout_marginEnd="32dp"
             android:labelFor="@+id/editTanggal"
             android:text="@string/tanggal"
-            app:layout_constraintEnd_toEndOf="@+id/textKategori"
-            app:layout_constraintStart_toStartOf="@+id/textKategori"
-            app:layout_constraintTop_toBottomOf="@id/textKategori">
+            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
+            app:layout_constraintStart_toStartOf="@+id/desc_catat"
+            app:layout_constraintTop_toBottomOf="@id/desc_catat">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTanggal"
@@ -169,42 +144,34 @@
             app:layout_constraintTop_toBottomOf="@+id/btnReset" />
 
         <TextView
-            android:id="@+id/txtSaldoAwal"
+            android:id="@+id/tipePengeluaran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider"
-            tools:text="Saldo Awal Anda : Rp 0" />
+            tools:text="@string/defisit" />
 
-        <TextView
-            android:id="@+id/txtSisaSaldo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/txtSaldoAwal"
-            app:layout_constraintStart_toStartOf="@+id/txtSaldoAwal"
-            app:layout_constraintTop_toBottomOf="@+id/txtSaldoAwal"
-            tools:text="@string/sisa_saldo" />
-
-        <TextView
-            android:id="@+id/tipePengeluaran"
+        <Button
+            android:id="@+id/btnShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:textAlignment="center"
-            android:textSize="18sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:text="@string/bagikan"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtSisaSaldo"
-            tools:text="@string/defisit" />
+            app:layout_constraintTop_toBottomOf="@+id/tipePengeluaran" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
