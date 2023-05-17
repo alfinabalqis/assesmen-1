@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayKategori)
         binding.kategori.setAdapter(adapter)
 
-        binding.fabDanaDarurat.setOnClickListener {
-            val intent = Intent(this, DanaDaruratActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        binding.fabDanaDarurat.setOnClickListener {
+//            val intent = Intent(this, DanaDaruratActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
     }
 
     override fun onBackPressed() {showExitConfirmationDialog()}

@@ -1,8 +1,9 @@
-package org.d3if3133.fimo
+package org.d3if3133.fimo.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import org.d3if3133.fimo.LoginActivity
 import org.d3if3133.fimo.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {

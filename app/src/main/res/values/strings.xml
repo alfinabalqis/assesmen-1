@@ -41,4 +41,5 @@
     <string name="histori">Histori</string>
     <string name="copyright">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow, dana darurat serta dapat membagikannya ke catatan user. \n Copyright © 2023 Alfina Balqis Nurzaharani.</string>
     <string name="contoh">15 April 2022</string>
+    <string name="belum_ada_data">Belum ada data</string>
 </resources>

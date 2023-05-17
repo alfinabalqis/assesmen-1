@@ -129,9 +129,11 @@
 
         <Button
             android:id="@+id/btnHitung"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:backgroundTint="@color/primary_color"
             android:text="@string/hitung"
@@ -143,8 +145,10 @@
 
         <Button
             android:id="@+id/btnReset"
-            android:layout_width="88dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:backgroundTint="@color/danger"
             android:text="@string/reset"
@@ -202,17 +206,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtSisaSaldo"
             tools:text="@string/defisit" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabDanaDarurat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/add_dana"
-            android:src="@drawable/icon_wallet"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputDeskripsi" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
