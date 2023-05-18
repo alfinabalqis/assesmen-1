@@ -10,7 +10,7 @@
     <string name="saldo">Masukkan Saldo</string>
     <string name="invalid">Data Harus Diisi</string>
     <string name="sukses">Berhasil Login</string>
-    <string name="catat">Jangan lupa catat pengeluaranmu hari ini yaa</string>
+    <string name="catat">PENCATATAN PENGELUARAN</string>
     <string name="username">Hi, %1$s</string>
     <string name="hitung">Hitung</string>
     <string name="reset">Reset</string>
@@ -20,19 +20,12 @@
     <string name="kategori">Kategori</string>
     <string name="pengeluaran">Jumlah Pengeluaran</string>
     <string name="tanggal">Tanggal</string>
-    <string name="saldo_awal">Saldo Anda : %1$s</string>
-    <string name="sisa_saldo">Sisa Saldo Anda : %1$s</string>
-    <string name="surplus">Selamat, kamu berhasil menghemat</string>
-    <string name="defisit">Wahh hari ini boros yaa. Saldonya udah minus nih</string>
-    <string name="balance">Wah ngepas banget ya</string>
     <string name="tipe_pengeluaran">Hasilnya</string>
     <string name="desc_pengeluaran">Deskripsi</string>
     <string name="no_desc">Tidak ada deskripsi</string>
     <string name="dana_darurat">Dana Darurat</string>
     <string name="pengeluaran_bulanan">Pengeluaran Bulanan</string>
     <string name="status">Status</string>
-    <string name="final_dana_darurat">Dana darurat yang dibutuhkan adalah : \n(belum menikah)</string>
-    <string name="add_dana">Tambah Dana Darurat</string>
     <string name="result">%1$s</string>
     <string name="back">Kembali</string>
     <string name="keluar">Keluar</string>
@@ -43,4 +36,5 @@
     <string name="contoh">15 April 2022</string>
     <string name="belum_ada_data">Belum ada data</string>
     <string name="bagikan">Bagikan</string>
+    <string name="save">Save</string>
 </resources>
