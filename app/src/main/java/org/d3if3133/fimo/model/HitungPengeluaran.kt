@@ -1,7 +1,5 @@
 package org.d3if3133.fimo.model
 
-import org.d3if3133.fimo.db.FimoEntity
-
 fun FimoEntity.hitungPengeluaran(): HasilPengeluaran{
     val saldoAwal = saldoAwal
     val pengeluaran = pengeluaran
