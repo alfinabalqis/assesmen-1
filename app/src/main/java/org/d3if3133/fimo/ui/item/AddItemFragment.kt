@@ -13,7 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import org.d3if3133.fimo.databinding.FragmentAddItemBinding
 import org.d3if3133.fimo.db.FimoApplication
-import org.d3if3133.fimo.db.Item
+import org.d3if3133.fimo.model.Item
 import java.text.NumberFormat
 import java.util.*
 

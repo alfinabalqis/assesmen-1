@@ -2,6 +2,7 @@ package org.d3if3133.fimo.db
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
+import org.d3if3133.fimo.model.Item
 
 @Dao
 interface ItemDao {
