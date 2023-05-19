@@ -1,4 +1,4 @@
-package org.d3if3133.fimo
+package org.d3if3133.fimo.ui.item
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
@@ -71,15 +71,5 @@ class FimoViewModel(private val itemDao: ItemDao) : ViewModel(){
             return false
         }
         return true
-    }
-}
-
-class FimoViewModelFactory(private val itemDao: ItemDao) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(FimoViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return FimoViewModel(itemDao) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

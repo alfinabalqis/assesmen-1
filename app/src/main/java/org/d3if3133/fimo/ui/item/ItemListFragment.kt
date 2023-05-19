@@ -1,4 +1,4 @@
-package org.d3if3133.fimo
+package org.d3if3133.fimo.ui.item
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import org.d3if3133.fimo.databinding.ItemListFragmentBinding
+import org.d3if3133.fimo.db.FimoApplication
 
 class ItemListFragment : Fragment() {
     private lateinit var binding: ItemListFragmentBinding

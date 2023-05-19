@@ -1,11 +1,10 @@
-package org.d3if3133.fimo
+package org.d3if3133.fimo.ui.item
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.ads.mediationtestsuite.viewmodels.ItemViewHolder
 import org.d3if3133.fimo.databinding.ItemListItemBinding
 import org.d3if3133.fimo.db.Item
 import org.d3if3133.fimo.db.getFormattedPrice
