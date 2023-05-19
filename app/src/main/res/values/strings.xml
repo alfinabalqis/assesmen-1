@@ -36,7 +36,11 @@
     <string name="currency_symbol">Rp</string>
     <string name="save_action">Simpan</string>
     <string name="delete_question">Yakin ingin menghapus?</string>
-    <string name="no">Tidak</string>
+    <string name="no">Batal</string>
     <string name="yes">Ya</string>
     <string name="makanan">Ini Icon Makanan</string>
+    <string name="konfirmasi_hapus">Anda Yakin Akan Menghapus Semua?</string>
+    <string name="switch_layout">Ubah Tampilan</string>
+    <string name="tentang">Tentang</string>
+    <string name="hapus">Hapus</string>
 </resources>

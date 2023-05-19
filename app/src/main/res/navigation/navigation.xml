@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/myNavHostFragment"
+    android:id="@+id/item_navigation"
     app:startDestination="@id/itemListFragment">
 
     <fragment
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/itemDetailFragment"
-        android:name="org.d3if3133.fimo.ui.item."
+        android:name="org.d3if3133.fimo.ui.item.ItemDetailFragment"
         android:label="@string/item_detail_fragment_title"
         tools:layout="@layout/fragment_item_detail">
         <argument
@@ -33,7 +33,6 @@
             android:id="@+id/action_itemDetailFragment_to_addItemFragment"
             app:destination="@id/addItemFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/addItemFragment"
         android:name="org.d3if3133.fimo.ui.item.AddItemFragment"
@@ -52,9 +51,9 @@
             app:popUpTo="@id/itemListFragment"
             app:popUpToInclusive="true" />
     </fragment>
-
     <fragment
         android:id="@+id/aboutFragment"
         android:name="org.d3if3133.fimo.ui.AboutFragment"
         android:label="AboutFragment" />
+
 </navigation>

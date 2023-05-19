@@ -12,14 +12,14 @@ import androidx.navigation.fragment.navArgs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.d3if3133.fimo.R
 import org.d3if3133.fimo.databinding.FragmentItemDetailBinding
-import org.d3if3133.fimo.db.Item
+import org.d3if3133.fimo.model.Item
 import org.d3if3133.fimo.db.ItemRoomDatabase
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
 class ItemDetailFragment : Fragment() {
-    private val navigationArgs: ItemDetailFragmentAtgs by navArgs()
+    private val navigationArgs: ItemDetailFragmentArgs by navArgs()
     lateinit var item: Item
 
     private val viewModel: FimoViewModel by lazy {
