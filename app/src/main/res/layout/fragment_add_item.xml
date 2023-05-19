@@ -24,32 +24,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputTanggal"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:labelFor="@+id/editTanggal"
-            android:text="@string/tanggal"
-            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
-            app:layout_constraintStart_toStartOf="@+id/desc_catat"
-            app:layout_constraintTop_toBottomOf="@id/desc_catat">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTanggal"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusable="false"
-                android:hint="@string/tanggal"
-                android:inputType="none"
-                android:textSize="14sp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputPengeluaran"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -57,9 +31,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="@+id/textInputTanggal"
-            app:layout_constraintStart_toStartOf="@+id/textInputTanggal"
-            app:layout_constraintTop_toBottomOf="@id/textInputTanggal">
+            app:layout_constraintEnd_toEndOf="@+id/desc_catat"
+            app:layout_constraintStart_toStartOf="@+id/desc_catat"
+            app:layout_constraintTop_toBottomOf="@id/desc_catat">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editPengeluaran"

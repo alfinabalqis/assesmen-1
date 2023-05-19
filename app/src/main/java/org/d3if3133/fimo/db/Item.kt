@@ -9,13 +9,15 @@ import java.text.NumberFormat
 data class Item(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    @ColumnInfo(name = "deskripsi")
-    val itemDeskripsi: String,
+    @ColumnInfo(name = "name")
+    val itemName: String,
     @ColumnInfo(name = "price")
     val itemPrice: Double,
     @ColumnInfo(name = "date")
-    val itemDate: String,
+    var tanggal: Long = System.currentTimeMillis(),
 )
-
+/**
+ * Returns the passed in price in currency format.
+ */
 fun Item.getFormattedPrice(): String =
     NumberFormat.getCurrencyInstance().format(itemPrice)

@@ -1,17 +1,11 @@
 package org.d3if3133.fimo.db
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ItemDao {
-
-    @Query("SELECT * from item ORDER BY deskripsi ASC")
+    @Query("SELECT * from item")
     fun getItems(): Flow<List<Item>>
 
     @Query("SELECT * from item WHERE id = :id")
@@ -27,4 +21,7 @@ interface ItemDao {
 
     @Delete
     suspend fun delete(item: Item)
+
+    @Query("DELETE FROM item")
+    suspend fun deleteAll()
 }

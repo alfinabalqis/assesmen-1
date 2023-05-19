@@ -21,7 +21,7 @@ abstract class ItemRoomDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     ItemRoomDatabase::class.java,
-                    "item_database"
+                    "fimo_database"
                 )
                     // Wipes and rebuilds instead of migrating if no Migration object.
                     // Migration is not part of this codelab.

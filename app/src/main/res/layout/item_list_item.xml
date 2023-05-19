@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/contoh"
+        android:text="@string/beli_basso"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/kategoriTextView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/circle_background"
+        android:background="@drawable/ic_launcher_background"
         android:gravity="center"
         android:text="@string/username"
         android:textColor="@color/white"
@@ -35,13 +35,13 @@
         tools:text="I" />
 
     <TextView
-        android:id="@+id/bmiTextView"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@+id/tanggalTextView"
         app:layout_constraintTop_toBottomOf="@+id/tanggalTextView"
-        tools:text="Kategori : " />
+        tools:text="Tanggal" />
 
     <TextView
         android:id="@+id/dataTextView"
@@ -52,7 +52,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="@+id/tanggalTextView"
-        app:layout_constraintTop_toBottomOf="@+id/bmiTextView"
+        app:layout_constraintTop_toBottomOf="@+id/date"
         tools:text="Rp 70.000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
