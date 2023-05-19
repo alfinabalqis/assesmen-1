@@ -61,5 +61,4 @@ dependencies {
     kapt 'androidx.room:room-compiler:2.4.2'
 
     implementation 'androidx.datastore:datastore-preferences:1.0.0'
-    implementation 'com.android.support:multidex:1.0.3'
 }
