@@ -7,18 +7,18 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tanggalTextView"
+        android:id="@+id/item_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/beli_basso"
+        android:text="@string/tanggal"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/kategoriTextView"
+        app:layout_constraintStart_toEndOf="@+id/kategoriImageView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/kategoriTextView"
+    <ImageView
+        android:id="@+id/kategoriImageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -26,33 +26,32 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/ic_launcher_background"
         android:gravity="center"
-        android:text="@string/username"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:contentDescription="@string/makanan"
+        android:src="@drawable/ic_makanan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="I" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/itemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/tanggalTextView"
-        app:layout_constraintTop_toBottomOf="@+id/tanggalTextView"
-        tools:text="Tanggal" />
+        app:layout_constraintStart_toStartOf="@+id/item_date"
+        app:layout_constraintTop_toBottomOf="@+id/item_date"
+        tools:text="Beli Bakso" />
 
     <TextView
-        android:id="@+id/dataTextView"
+        android:id="@+id/itemPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="@+id/tanggalTextView"
-        app:layout_constraintTop_toBottomOf="@+id/date"
-        tools:text="Rp 70.000" />
+        app:layout_constraintStart_toStartOf="@+id/item_date"
+        app:layout_constraintTop_toBottomOf="@+id/itemName"
+        tools:text="IDR 20000.00" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

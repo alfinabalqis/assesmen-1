@@ -27,4 +27,16 @@
     <string name="date">Date</string>
     <string name="add_new_item">Add New Item</string>
     <string name="beli_basso">Beli Basso</string>
+    <string name="item_detail_fragment_title">Detail Pengeluaran</string>
+    <string name="add_fragment_title">Tambah Pengeluaran</string>
+    <string name="edit_fragment_title">Edit Pengeluaran</string>
+    <string name="about_fragment_title">Tentang FIMO</string>
+    <string name="item_name_req">Deskripsi <font color='#FF0000'>*</font></string>
+    <string name="item_price_req">Harga <font color='#FF0000'>*</font></string>
+    <string name="currency_symbol">Rp</string>
+    <string name="save_action">Simpan</string>
+    <string name="delete_question">Yakin ingin menghapus?</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="makanan">Ini Icon Makanan</string>
 </resources>
