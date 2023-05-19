@@ -19,7 +19,7 @@
     <string name="tanggal">Tanggal</string>
     <string name="desc_pengeluaran">Deskripsi</string>
     <string name="no_desc">Tidak ada deskripsi</string>
-    <string name="copyright">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow dan dapat membagikannya ke catatan user. \n Copyright © 2023 Alfina Balqis Nurzaharani.</string>
+    <string name="copyright">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow serta dapat membagikannya ke catatan user Aplikasi ini dibuat untuk Projek Assesment Mata Kuliah Pemrograman Mobile \n Copyright © 2023 Alfina Balqis Nurzaharani.</string>
     <string name="save">Save</string>
     <string name="edit_item">Edit Item</string>
     <string name="delete">Delete</string>
