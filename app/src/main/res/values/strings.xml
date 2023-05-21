@@ -37,7 +37,7 @@
     <string name="konfirmasi_hapus">Yakin akan menghapus semua histori?</string>
     <string name="batal">Batal</string>
     <string name="desc">Atur keuanganmu dengan mudah di aplikasi Fimo</string>
-    <string name="desc_about">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow, dana darurat serta dapat membagikannya ke catatan user Aplikasi ini dibuat untuk Projek Assesment Mata Kuliah Pemrograman Mobile\nCopyright © 2023 Alfina Balqis Nurzaharani.</string>
+    <string name="desc_about">Aplikasi FiMo adalah aplikasi keuangan dan perancangan keuangan dimana dapat menghitung cash flow serta dapat membagikannya ke catatan user Aplikasi ini dibuat untuk Projek Assesment Mata Kuliah Pemrograman Mobile\n\nTemukan kode aplikasi pada link berikut : https://github.com/alfinabalqis/fimo/tree/assesmen2 \nCopyright © 2023 Alfina Balqis Nurzaharani.</string>
     <string name="bagikan_template">Detail Pengeluaran \nDeskripsi: %1$s \n Harga: %2$s</string>
     <string name="gambar_ilustrasi">Gambar Ilustrasi</string>
     <string name="tanggal">15 April 2022</string>
