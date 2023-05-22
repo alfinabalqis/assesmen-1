@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="@string/tanggal"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/kategoriImageView"
@@ -52,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
         app:layout_constraintStart_toStartOf="@+id/item_date"
         app:layout_constraintTop_toBottomOf="@+id/item_date"
         tools:text="Beli Bakso" />
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/inter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="@+id/item_date"

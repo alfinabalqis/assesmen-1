@@ -5,6 +5,7 @@
     android:layout_margin="16dp"
     android:autoLink="web"
     android:text="@string/desc_about"
-    android:textSize="18sp">
+    android:textSize="18sp"
+    android:fontFamily="@font/poppins_medium">
 
 </TextView>
