@@ -1,0 +1,63 @@
+[
+    {
+        "nama": "PT BANK RAKYAT INDONESIA", 
+        "alamat": "Jl. Jend. Sudirman Kav. 44-46, Jakarta 10210", 
+        "website": "www.bri.co.id", 
+        "imageId": "bri"
+    },
+    {
+        "nama": "PT BANK MANDIRI", 
+        "alamat": "Plaza Mandiri, Jl. Gatot Subroto Kav. 36-38, Jakarta 12190", 
+        "website": "www.bankmandiri.co.id", 
+        "imageId": "mandiri"
+    },
+    {
+        "nama": "PT BANK NEGARA INDONESIA", 
+        "alamat": "Jl. Jend. Sudirman Kav. 1, Jakarta 10220", 
+        "website": "www.bni.co.id", 
+        "imageId": "bni"
+    },
+    {
+        "nama": "PT BANK CENTRAL ASIA", 
+        "alamat": "Menara BCA, Grand Indonesia Jl. M.H Thamrin No. 1, Jakarta 10310", 
+        "website": "www.bca.co.id", 
+        "imageId": "bca"
+    },
+    {
+        "nama": "PT BANK PERMATA", 
+        "alamat": "Gedung World Trade Center (WTC) II, Jl. Jend. Sudirman Kav. 29-31 Jakarta 12920", 
+        "website": "www.permatabank.com", 
+        "imageId": "permata"
+    },
+    {
+        "nama": "PT BANK MAYBANK  INDONESIA", 
+        "alamat": "Gedung Sentral Senayan 3, Lt. 26, Jl. Asia Afrika No. 8, Gelora Bung Karno - Senayan, Jakarta Pusat 10270", 
+        "website": "www.maybank.co.id", 
+        "imageId": "maybank"
+    },
+    {
+        "nama": "PT BANK TABUNGAN NEGARA", 
+        "alamat": "Gedung Menara BTN, Jl. Gajah Mada No. 1, Jakarta 10130", 
+        "website": "www.btn.co.id", 
+        "imageId": "btn"
+    },
+    {
+        "nama": "PT BANK MEGA", 
+        "alamat": "Menara Bank Mega Lt.15, Jl. Kapten Tendean Kav. 12-14 A, Jakarta 12790", 
+        "website": "www.bankmega.com", 
+        "imageId": "mega"
+    },
+    {
+        "nama": "PT BANK SYARIAH INDONESIA", 
+        "alamat": "Gedung The Tower, Jl. Gatot Subroto No.27 Kel. Karet Semanggi, Kec. Setiabudi, Jakarta Selatan 12930", 
+        "website": "www.bankbsi.co.id/", 
+        "imageId": "bsi"
+    },
+    {
+        "nama": "PT BANK KEB HANA INDONESIA", 
+        "alamat": "Mangkuluhur City Tower One Jl. Jend. Gatot Subroto Kav. 1-3 Kel. Karet Semanggi, Jakarta Selatan", 
+        "website": "www.hanabank.co.id", 
+        "imageId": "hana"
+    }
+    
+]
