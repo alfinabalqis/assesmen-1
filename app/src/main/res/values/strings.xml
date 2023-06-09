@@ -34,4 +34,8 @@
     <string name="website">www.bri.co.id</string>
     <string name="message">%1$s diklik!</string>
     <string name="koneksi_error">Koneksi error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data list bank otomatis</string>
+    <string name="notif_title">Ada bank baru!</string>
+    <string name="notif_text">Ayo segera checkkk</string>
 </resources>
