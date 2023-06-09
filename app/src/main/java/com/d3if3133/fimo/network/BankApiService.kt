@@ -7,8 +7,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-private const val BASE_URL =
-    "https://gist.githubusercontent.com/alfinabalqis/8cea2d84b46aa07ed3833fe972f5e891/raw/ec593055cb72dcec03ca8b5431d5648384f5baac/"
+private const val BASE_URL = "https://raw.githubusercontent.com/" +
+        "alfinabalqis/fimo/static-api/"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
