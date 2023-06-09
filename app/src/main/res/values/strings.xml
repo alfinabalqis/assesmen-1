@@ -6,6 +6,7 @@
     <string name="item_detail_fragment_title">Detail Pengeluaran</string>
     <string name="add_fragment_title">Tambah Pengeluaran</string>
     <string name="edit_fragment_title">Edit Pengeluaran</string>
+    <string name="bank_fragment_title">List Bank</string>
     <string name="price">Harga</string>
     <string name="item">Item</string>
     <string name="delete">Hapus</string>
@@ -28,4 +29,9 @@
     <string name="tanggal">15 April 2022</string>
     <string name="share">Share</string>
     <string name="belum_ada_data">Belum Ada Data</string>
+    <string name="bank_name">Bank BRI</string>
+    <string name="alamat">Jl. Jend. Sudirman Kav. 1, Jakarta 10220</string>
+    <string name="website">www.bri.co.id</string>
+    <string name="message">%1$s diklik!</string>
+    <string name="koneksi_error">Koneksi error</string>
 </resources>
