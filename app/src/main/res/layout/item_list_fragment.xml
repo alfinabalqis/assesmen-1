@@ -38,7 +38,8 @@
             android:src="@drawable/ic_bank"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:tint="@android:color/white" />
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/purple_700" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
