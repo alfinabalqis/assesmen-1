@@ -1,8 +1,9 @@
 package com.d3if3133.fimo.ui.bank
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.d3if3133.fimo.R
@@ -32,8 +33,11 @@ class BankAdapter : RecyclerView.Adapter<BankAdapter.ViewHolder>() {
                 .into(bankImageView)
 
             root.setOnClickListener {
-                val message = root.context.getString(R.string.message, bank.nama)
-                Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
+//                val message = root.context.getString(R.string.message, bank.nama)
+//                Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
+                val websiteUrl = bankWebsite.text.toString()
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl))
+                root.context.startActivity(intent)
             }
         }
     }
