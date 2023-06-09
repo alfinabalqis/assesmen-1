@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/bank_alamat"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inter"
