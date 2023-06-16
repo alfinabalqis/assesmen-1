@@ -42,6 +42,8 @@ class UpdateWorker(
             .setContentText(applicationContext.getString(
                 R.string.notif_text))
             .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setContentIntent(getPendingIntent(applicationContext))
+            .setAutoCancel(true)
         val manager = NotificationManagerCompat.from(applicationContext)
         manager.notify(NOTIFICATION_ID, builder.build())
 
